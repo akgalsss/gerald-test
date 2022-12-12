@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
+import type { Node } from 'react-native';
 
 const styles = StyleSheet.create({
   image: {
@@ -8,7 +9,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const Page1 = () => (
+const Page1 = (): Node => (
   <View>
     <Text>Here is a starter page</Text>
     <Image

@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Node } from 'react-native';
 import {
   StyleSheet,
   SafeAreaView,
@@ -8,7 +9,7 @@ import {
 } from 'react-native';
 import ThemeColors from '../lib/ThemeColors';
 
-const MenuItem = ({ title, id, selected, onTap }) => (
+const MenuItem = ({ title, id, selected, onTap }): Node => (
   <TouchableOpacity
     key={id}
     onPress={onTap}

@@ -9,6 +9,7 @@ import {
   TouchableOpacity,
   Image,
 } from 'react-native';
+import type { Node } from 'react-native';
 import ThemeColors from '../lib/ThemeColors';
 import {
   useNavigationBuilder,
@@ -20,7 +21,7 @@ function AppNavigaton({
   initialRouteName,
   children,
   screenOptions,
-}) {
+}): Node {
   const [animation] = useState(new Animated.Value(0));
   const [isMenuOpen, setMenuOpen] = useState();
   const layoutMoveY = animation.interpolate({

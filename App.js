@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Node } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createAppNavigator } from './src/navigation/createAppNavigator';
 import Page1 from './src/views/Page1';
@@ -8,7 +9,7 @@ import Page4 from './src/views/Page4';
 
 const AppNavigaton = createAppNavigator();
 
-const App = () => {
+const App = (): Node => {
   return <NavigationContainer>
     <AppNavigaton.Navigator>
       <AppNavigaton.Screen name='start' initialParams={{ title: 'Start' }} component={Page1} />
